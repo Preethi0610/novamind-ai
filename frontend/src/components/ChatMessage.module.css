@@ -1,0 +1,128 @@
+.message {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  width: 100%;
+  animation: messageIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes messageIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.97); filter: blur(3px); }
+  to   { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+/* ── User messages → right aligned ── */
+.user {
+  flex-direction: row-reverse;
+}
+
+/* ── Avatar ── */
+.avatar {
+  flex-shrink: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.user .avatar {
+  background: linear-gradient(135deg, var(--green-700), var(--green-600));
+  color: var(--green-300);
+  border: 1px solid var(--color-border-green);
+  box-shadow: 0 0 10px -3px var(--green-glow);
+}
+
+.assistant .avatar {
+  background: var(--color-glass-strong);
+  color: var(--gold-400);
+  border: 1px solid var(--color-border);
+}
+
+/* ── Bubble ── */
+.body {
+  flex: 1;
+  min-width: 0;
+  max-width: 80%;
+}
+
+.bubble {
+  border-radius: var(--radius-md);
+  padding: 0.7rem 0.85rem;
+  line-height: 1.6;
+  font-size: 0.84rem;
+}
+
+/* User bubble — right side, green */
+.user .bubble {
+  background: linear-gradient(135deg, var(--green-700), var(--green-900));
+  border: 1px solid var(--color-border-green);
+  color: var(--green-300);
+  font-weight: 420;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 4px 20px -6px rgba(27, 67, 50, 0.35);
+}
+
+.user .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* AI bubble — left side, glass */
+.assistant .bubble {
+  background: var(--color-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-bottom-left-radius: 4px;
+}
+
+/* ── Plain text ── */
+.plain {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ── Markdown ── */
+.markdown { word-break: break-word; }
+.markdown p { margin: 0 0 0.45rem; }
+.markdown p:last-child { margin-bottom: 0; }
+.markdown ul, .markdown ol { margin: 0.25rem 0 0.5rem 1.1rem; padding: 0; }
+.markdown li { margin-bottom: 0.2rem; }
+.markdown h1, .markdown h2, .markdown h3 { margin: 0.8rem 0 0.3rem; line-height: 1.3; color: var(--gold-400); }
+.markdown strong { color: var(--gold-400); font-weight: 600; }
+.markdown a { color: var(--green-400); text-decoration: none; border-bottom: 1px solid var(--green-soft); }
+.markdown a:hover { border-color: var(--green-400); }
+
+.inlineCode {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  background: var(--green-softer);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  border: 1px solid rgba(45, 106, 79, 0.15);
+  color: var(--green-300);
+}
+
+/* ── Time ── */
+.time {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.6rem;
+  color: var(--color-text-dim);
+  letter-spacing: 0.02em;
+}
+
+.user .time {
+  text-align: right;
+}
