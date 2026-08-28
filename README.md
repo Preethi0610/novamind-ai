@@ -1,8 +1,21 @@
 # NovaMind.ai - Full Stack Chat Application
 
-A production grade AI chat application featuring a **glassmorphism UI**, **real time GPT integration**, and **animated loading states** built with Next.js, React, TypeScript and Python.
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/62f4b953-7ca4-45fc-8fa3-e72c14e30974" width="350" /></td>
+      <td><img src="https://github.com/user-attachments/assets/9897afa5-70dd-4860-95cb-4ccb7a900f95" width="350" /></td>
+    </tr>
+  </table>
+</div>
 
+A production grade AI chat application featuring a **glassmorphism UI**, **real time GPT integration**, and **animated loading states** built with Next.js, React, TypeScript, and Python.
 
+<div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
+  <img src="https://github.com/user-attachments/assets/bf6f5c41-a934-400a-8d10-e16f396b8bd6" width="100%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/51e8235b-df63-41b5-8930-7c4449a4af17" width="100%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/d49c99ad-f86e-40c3-b8fc-42d9e23dc55c" width="100%" style="border-radius: 12px;" />
+</div>
 ---
 
 ## Highlights
