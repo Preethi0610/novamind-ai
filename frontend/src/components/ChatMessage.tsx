@@ -11,7 +11,6 @@ interface ChatMessageProps {
   message: Message;
 }
 
-/* ── Alien icon for Nova ── */
 function AlienIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
